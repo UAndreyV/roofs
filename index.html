@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="POST">
+        <div class="form-content">
+            <div class="form-content__items">
+                <div class="form-content__item">
+                    <h3 class="form-content__item-title">Выберите тип кровли:</h3>
+                    <div data-swiper class="slider1">
+                        <div class="slider-wrapper">
+                            <div class="form-content__item-type-roof">
+                                <div class="form-content__item-type-roof-item">
+                                    <input checked type="radio" name="type-roof" id="type-roof1">
+                                    <label for="type-roof1">
+                                        <img src="img/type-roof1.png" alt="МАНСАРДНАЯ">
+                                        <span>МАНСАРДНАЯ</span>
+                                    </label>
+                                </div>
+                                <div class="form-content__item-type-roof-item">
+                                    <input type="radio" name="type-roof" id="type-roof2">
+                                    <label for="type-roof2">
+                                        <img src="img/type-roof2.png" alt="ВАЛЬМОВАЯ">
+                                        <span>ВАЛЬМОВАЯ</span>
+                                    </label>
+                                </div>
+                                <div class="form-content__item-type-roof-item">
+                                    <input type="radio" name="type-roof" id="type-roof3">
+                                    <label for="type-roof3">
+                                        <img src="img/type-roof3.png" alt="ШАТРОВАЯ">
+                                        <span>ШАТРОВАЯ</span>
+                                    </label>
+                                </div>
+                                <div class="form-content__item-type-roof-item">
+                                    <input type="radio" name="type-roof" id="type-roof4">
+                                    <label for="type-roof4">
+                                        <img src="img/type-roof4.png" alt="ДВУСКАТНАЯ">
+                                        <span>ДВУСКАТНАЯ</span>
+                                    </label>
+                                </div>
+                                <div class="form-content__item-type-roof-item">
+                                    <input type="radio" name="type-roof" id="type-roof5">
+                                    <label for="type-roof5">
+                                        <img src="img/type-roof5.png" alt="МНОГОСКАТНАЯ">
+                                        <span>МНОГОСКАТНАЯ</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev1">
+                    </div>
+                    <div class="swiper-button-next1">
+                    </div>
+                </div>
+                <div class="form-content__item">
+                    <h3 class="form-content__item-title">Выберите длину кровли (в метрах):</h3>
+                    <div class="form-content__item-roof-length">
+                        <div class="form-content__item-roof-length-img">
+                            <img src="img/length1.png" alt="">
+                        </div>
+                        <div class="form-content__item-roof-length-val">
+                            <label for="karnizA">
+                                <span>А</span>
+                                <p>Карниз А</p>
+                                <input type="text" name="karnizA" id="karnizA">
+                            </label>
+                            <label for="karnizB">
+                                <span>Б</span>
+                                <p>Карниз Б</p>
+                                <input type="text" name="karnizB" id="karnizB">
+                            </label>
+                            <label for="konekV">
+                                <span>В</span>
+                                <p>Конёк В</p>
+                                <input type="text" name="konekV" id="konekV">
+                            </label>
+                            <label for="skatD">
+                                <span>В</span>
+                                <p>Конёк В</p>
+                                <input type="text" name="skatD" id="skatD">
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-content__item">
+                    <h3 class="form-content__item-title">Выберите тип покрытия кровли:</h3>
+                    <div class="form-content__item-type-coating">
+                        <input checked type="radio" name="type-coating" id="type-coating1">
+                        <label for="type-coating1">
+                            <img src="img/type-coating1.png" alt="МЕТАЛЛОЧЕРЕПИЦА">
+                            <span>МЕТАЛЛОЧЕРЕПИЦА</span>
+                        </label>
+                        <input type="radio" name="type-coating" id="type-coating2">
+                        <label for="type-coating2">
+                            <img src="img/type-coating2.png" alt="ПРОФНАСТИЛ">
+                            <span>ПРОФНАСТИЛ</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-content__item">
+                    <h3 class="form-content__item-title">Выберите цвет покрытия кровли:</h3>
+                    <div class="form-content__item-coating-color">
+                        <div class="form-content__item-coating-color-img">
+                            <img data-img src="img/type-roof1-hole.png" alt="">
+                            <div class="form-content__item-coating-color-img-back"></div>
+                        </div>
+
+                        <div class="slider2">
+                            <div class="slider-wrapper">
+                                <div class="form-content__item-coating-color-var">
+                                    <div class="form-content__item-coating-color-group">
+                                        <h6>«ПОЛИЭСТЕР» односторонний</h6>
+                                        <div class="form-content__item-coating-color-var-group">
+                                            <input type="radio" name="group1" id="group1-1">
+                                            <label for="group1-1" title="Темная слоновая кость 1014" data-color="1014"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_1014.png);
+                                                    background-color: #d9b980;"></label>
+                                            <input type="radio" name="group1" id="group1-2">
+                                            <label for="group1-2" class="" title="Светлая слоновая кость 1015"
+                                                data-color="1015" data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_1015.png);
+                                                    background-color: #ddbc9b;"></label>
+                                            <input type="radio" name="group1" id="group1-3">
+                                            <label for="group1-3" class="" title="1018 Желтый" data-color="1018"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_1018.png);
+                                                    background-color: #fec629;"></label>
+                                            <input type="radio" name="group1" id="group1-4">
+                                            <label for="group1-4" class="" title="Апельсин 2004" data-color="2004"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_2004.png);
+                                                    background-color: #d55a2a;"></label>
+                                            <input type="radio" name="group1" id="group1-5">
+                                            <input type="radio" name="group1" id="group1-25">
+                                            <label for="group1-25" class="" title="Цинк 0100" data-color="0100"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_0100m.png);
+                                                    background-color: #a11d28;"></label>
+                                            <label for="group1-5" class="" title="Рубин 3003" data-color="3003"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_3003.png);
+                                                    background-color: #56171f;"></label>
+                                            <input type="radio" name="group1" id="group1-6">
+                                            <label for="group1-6" class="" title="3005 Красное вино" data-color="3005"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_3005.png);
+                                                    background-color: #693029;"></label>
+                                            <input type="radio" name="group1" id="group1-7">
+                                            <label for="group1-7" class="" title="Коррида 3009" data-color="3009"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_3009.png);
+                                                    background-color: #912928;"></label>
+                                            <input type="radio" name="group1" id="group1-8">
+                                            <label for="group1-8" class="" title="3011 Красно-коричневый"
+                                                data-color="3011" data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_3011.png);
+                                                    background-color: #063784;"></label>
+                                            <input type="radio" name="group1" id="group1-9">
+                                            <label for="group1-9" class="" title="Ультрамарин 5002" data-color="5002"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_5002.png);
+                                                    background-color: #065195;"></label>
+                                            <input type="radio" name="group1" id="group1-10">
+                                            <label for="group1-10" class="" title="Сигнально-синий 5005"
+                                                data-color="5005" data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_5005.png);
+                                                    background-color: #068284;"></label>
+                                            <input type="radio" name="group1" id="group1-11">
+                                            <label for="group1-11" class="" title="Морская волна 5021" data-color="5021"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_5021.png);
+                                                    background-color: #2e6023;"></label>
+                                            <input type="radio" name="group1-" id="group1-12">
+                                            <label for="group1-12" class="" title="Зеленая листва 6002"
+                                                data-color="6002" data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_6002.png);
+                                                    background-color: #063f2c;"></label>
+                                            <input type="radio" name="group1" id="group1-13">
+                                            <label for="group1-13" class="" title="Зеленый мох 6005" data-color="6005"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_6005.png);
+                                                    background-color: #adc3ab;"></label>
+                                            <input type="radio" name="group1" id="group1-14">
+                                            <label for="group1-14" class="" title="Бело-зеленый 6019" data-color="6019"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_6019.png);
+                                                    background-color: #06614f;"></label>
+                                            <input type="radio" name="group1" id="group1-15">
+                                            <label for="group1-15" class="" title="Зеленый опал 6026" data-color="6026"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_6026.png);
+                                                    background-color: #077e3c;"></label>
+                                            <input type="radio" name="group1" id="group1-16">
+                                            <label for="group1-16" class="" title="Зеленая мята 6029" data-color="6029"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_6029.png);
+                                                    background-color: #a9a7ac;"></label>
+                                            <input type="radio" name="group1" id="group1-17">
+                                            <label for="group1-17" class="" title="Серый 7004" data-color="7004"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_7004.png);
+                                                    background-color: #777a77;"></label>
+                                            <input type="radio" name="group1" id="group1-18">
+                                            <label for="group1-18" class="" title="Серая мышь 7005" data-color="7005"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_7005.png);
+                                                    background-color: #494c55;"></label>
+                                            <input type="radio" name="group1" id="group1-19">
+                                            <label for="group1-19" class="" title="Графит серый 7024" data-color="7024"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_7024.png);
+                                                    background-color: #693029;"></label>
+                                            <input type="radio" name="group1" id="group1-20">
+                                            <label for="group1-20" class="" title="Медно-коричневый 8004"
+                                                data-color="8004" data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_8004.png);
+                                                    background-color: #3f2a25;"></label>
+                                            <input type="radio" name="group1" id="group1-21">
+                                            <label for="group1-21" class="" title="Шоколадно-коричневый 8017"
+                                                data-color="8017" data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_8017.png);
+                                                    background-color: #3a3132;"></label>
+                                            <input type="radio" name="group1" id="group1-22">
+                                            <label for="group1-22" class="" title="Серо-коричневый 8019"
+                                                data-color="8019" data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_8019.png);
+                                                    background-color: #dadad2;"></label>
+                                            <input type="radio" name="group1" id="group1-23">
+                                            <label for="group1-23" class="" title="Серо-белый 9002" data-color="9002"
+                                                data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_9002.png);
+                                                    background-color: #fefcff;"></label>
+                                            <input type="radio" name="group1" id="group1-24">
+                                            <label for="group1-24" class="" title="Сигнально-белый 9003"
+                                                data-color="9003" data-material="polyester" style="background-image: url(/assets/calc/stock/polyester/ral_9003.png);
+                                                    background-color: #9a9a9a;"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-content__item-coating-color-group">
+                                        <h6>«СТАЛЬНОЙ БАРХАТ» односторонний</h6>
+                                        <div class="form-content__item-coating-color-var-group">
+                                            <input type="radio" name="group2" id="group2-1">
+                                            <label for="group2-1" class="" title="Бархатное вино 3005" data-color="3005"
+                                                data-material="stal_valvet_second" style="background-image: url(/assets/calc/stock/polyester_bilateral/ral_3005_3005.png);
+                                                    background-color: #56171f;"></label>
+                                            <input type="radio" name="group2" id="group2-2">
+                                            <label for="group2-2" class="" title="Бархатный графит серый 7024"
+                                                data-color="7024" data-material="stal_valvet_second" style="background-image: url(/assets/calc/stock/polyester_bilateral/ral_7024_7024.png);
+                                                    background-color: #494c55;"></label>
+                                            <input type="radio" name="group2" id="group2-3">
+                                            <label for="group2-3" class="" title="Бархатный шоколад 8017"
+                                                data-color="8017" data-material="stal_valvet_second" style="background-image: url(/assets/calc/stock/polyester_bilateral/ral_8017_8017.png);
+                                                    background-color: #3f2a25;"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-content__item-coating-color-group">
+                                        <h6>«PRINTECH» односторонний</h6>
+                                        <div class="form-content__item-coating-color-var-group">
+                                            <input type="radio" name="group3" id="group3-1">
+                                            <label for="group3-1" class="" title="Темное дерево" data-color="ОМ08"
+                                                data-material="printech" style="background-image: url(/assets/calc/stock/printech/ral_om08.png);
+                                                    background-color: #795136;"></label>
+                                            <input type="radio" name="group3" id="group3-2">
+                                            <label for="group3-2" class="" title="Светлое дерево" data-color="ОМ02"
+                                                data-material="printech" style="background-image: url(/assets/calc/stock/printech/ral_om02.png);
+                                                    background-color: #b2884d;"></label>
+                                            <input type="radio" name="group3" id="group3-3">
+                                            <label for="group3-3" class="" title="3D Светлое дерево"
+                                                data-color="ОМ35_3D" data-material="printech" style="background-image: url(/assets/calc/stock/printech/ral_om35.png);
+                                                    background-color: #d09561;"></label>
+                                            <input type="radio" name="group3" id="group3-4">
+                                            <label for="group3-4" class="" title="3D Темное дерево" data-color="ОМ45_3D"
+                                                data-material="printech" style="background-image: url(/assets/calc/stock/printech/ral_om45.png);
+                                                    background-color: #bc5030;"></label>
+                                            <input type="radio" name="group3" id="group3-5">
+                                            <label for="group3-5" class="" title="3D Орех" data-color="ОМ31_3D"
+                                                data-material="printech" style="background-image: url(/assets/calc/stock/printech/ral_om31.png);
+                                                    background-color: #7f4d2c;"></label>
+                                            <input type="radio" name="group3" id="group3-6">
+                                            <label for="group3-6" class="" title="Дикий камень" data-color="S001"
+                                                data-material="printech" style="background-image: url(/assets/calc/stock/printech/ral_s001.png);
+                                                    background-color: #77797a;"></label>
+                                            <input type="radio" name="group3" id="group3-7">
+                                            <label for="group3-7" class="" title="Кирпичная кладка" data-color="S003"
+                                                data-material="printech" style="background-image: url(/assets/calc/stock/printech/ral_s003.png);
+                                                    background-color: #c55a47;"></label>
+                                            <input type="radio" name="group3" id="group3-8">
+                                            <label for="group3-8" class="" title="Светлый орех" data-color="ОМ03"
+                                                data-material="printech" style="background-image: url(/assets/calc/stock/printech/ral_om03.png);
+                                                    background-color: #efbe83;"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-content__item-coating-color-group">
+                                        <h6>«ПОЛИЭСТЕР» двусторонний</h6>
+                                        <div class="form-content__item-coating-color-var-group">
+                                            <input type="radio" name="group4" id="group4-1">
+                                            <label for="group4-1" class=""
+                                                title="2-х сторнний Светлая слоновая кость 1015" data-color="1015_1015"
+                                                data-material="polyester_bilateral" style="background-image: url(/assets/calc/stock/polyester_bilateral/ral_1015_1015.png);
+                                                    background-color: #d9b980;"></label>
+                                            <input type="radio" name="group4" id="group4-2">
+                                            <label for="group4-2" class="" title="2-х сторнний Красное вино 3005"
+                                                data-color="3005_3005" data-material="polyester_bilateral" style="background-image: url(/assets/calc/stock/polyester_bilateral/ral_3005_3005.png);
+                                                    background-color: #56171f;"></label>
+                                            <input type="radio" name="group4" id="group4-3">
+                                            <label for="group4-3" class="" title="2-х сторнний Зеленый мох 6005"
+                                                data-color="6005_6005" data-material="polyester_bilateral" style="background-image: url(/assets/calc/stock/polyester_bilateral/ral_6005_6005.png);
+                                                    background-color: #063f2c;"></label>
+                                            <input type="radio" name="group4" id="group4-4">
+                                            <label for="group4-4" class="" title="2-х сторнний Графит серый 7024"
+                                                data-color="7024_7024" data-material="polyester_bilateral" style="background-image: url(/assets/calc/stock/polyester_bilateral/ral_7024_7024.png);
+                                                    background-color: #494c55;"></label>
+                                            <input type="radio" name="group4" id="group4-5">
+                                            <label for="group4-5" class=""
+                                                title="2-х сторнний Шоколадно-коричневый 8017" data-color="8017_8017"
+                                                data-material="polyester_bilateral" style="background-image: url(/assets/calc/stock/polyester_bilateral/ral_8017_8017.png);
+                                                    background-color: #3f2a25;"></label>
+                                            <input type="radio" name="group4" id="group4-6">
+                                            <label for="group4-6" class="" title="2-х сторнний Серо-коричневый 8019"
+                                                data-color="8019_8019" data-material="polyester_bilateral" style="background-image: url(/assets/calc/stock/polyester_bilateral/ral_8019_8019.png);
+                                                    background-color: #494c55;"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-content__item-coating-color-group">
+                                        <h6>«PRINTECH» двусторонний</h6>
+                                        <div class="form-content__item-coating-color-var-group">
+                                            <input type="radio" name="group5" id="group5-1">
+                                            <label for="group5-1" class="" title="2-х сторнний Светлое дерево"
+                                                data-color="W004_W004" data-material="printech_bilateral" style="background-image: url(/assets/calc/stock/printech_bilateral/ral_w004_w004.png);
+                                                    background-color: #b6785e;"></label>
+                                            <input type="radio" name="group5" id="group5-2">
+                                            <label for="group5-2" class="" title="2-х сторнний 3D Орех"
+                                                data-color="W0013D_W001" data-material="printech_bilateral" style="background-image: url(/assets/calc/stock/printech_bilateral/ral_w001_3d_w001.png);
+                                                    background-color: #e5b17b;"></label>
+                                            <input type="radio" name="group5" id="group5-3">
+                                            <label for="group5-3" class="" title="2-х сторнний античный дуб"
+                                                data-color="A_A" data-material="printech_bilateral" style="background-image: url(/assets/calc/stock/printech_bilateral/A_A.png);
+                                                    background-color: #3f2a25;"></label>
+                                            <input type="radio" name="group5" id="group5-4">
+                                            <label for="group5-4" class="" title="2-х сторнний Каштан" data-color="K_K"
+                                                data-material="printech_bilateral" style="background-image: url(/assets/calc/stock/printech_bilateral/K_K.png);
+                                                    background-color: #534445;"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-content__item-coating-color-group">
+                                        <h6>«СТАЛЬНОЙ БАРХАТ» двусторонний</h6>
+                                        <div class="form-content__item-coating-color-var-group">
+                                            <input type="radio" name="group6" id="group6-1">
+                                            <label for="group6-1" class=""
+                                                title="2-х сторонний Бархатный графит серый 7024" data-color="7024"
+                                                data-material="stal_valvet" style="background-image: url(/assets/calc/stock/polyester_bilateral/ral_7024_7024.png);
+                                                    background-color: #494c55;"></label>
+                                            <input type="radio" name="group6" id="group6-2">
+                                            <label for="group6-2" class="" title="2-х сторонний Бархатный шоколад 8017"
+                                                data-color="8017" data-material="stal_valvet" style="background-image: url(/assets/calc/stock/polyester_bilateral/ral_3005_3005.png);
+                                                    background-color: #56171f;"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev2"></div>
+                            <div class="swiper-button-next2"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-content__item">
+                    <h3 class="form-content__item-title _big-title">Отлично! Остался всего один шаг!</h3>
+                    <div class="form-content__item-last">
+                        <div class="form-content__item-last-img">
+                            <img data-img src="img/type-roof1-hole.png" alt="">
+                            <div class="form-content__item-last-img-back"></div>
+                        </div>
+                        <div class="form-content__item-last-contact">
+                            <label for="contact-name">Как Вас зовут? *</label>
+                            <input type="text" name="contact-name" id="contact-name">
+                            <label for="contact-tel">Ваш номер телефона: *</label>
+                            <input type="text" name="contact-tel" id="contact-tel">
+                            <label for="contact-city">Из какого Вы города?</label>
+                            <input type="text" name="contact-city" id="contact-city">
+                            <button>Отправить заявку на расчёт</button>
+                            <input type="checkbox" checked name="contact-privacy" id="contact-privacy">
+                            <label for="contact-privacy" class="form-content__item-last-contact-privacy">С
+                                <a href="#">политикой конфиденциальности</a> ознакомлен(а)</label>
+                            <p class="form-content__item-last-contact-privacy-required">* – поля обязательные к
+                                заполнению</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="form-content__control">
+                <div class="form-content__control-accomp">
+                    <span class="form-content__control-done">Готово: </span>
+                    <span class="form-content__control-percent">0%</span>
+                    <div class="form-content__control-scale">
+                        <div class=""></div>
+                    </div>
+                </div>
+                <div class="form-content__control-btn">
+                    <button class="form-content__control-btn-prev"></button>
+                    <button class="form-content__control-btn-next">Далее</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
